@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fuck you';
-  condition = false;
-  show = true;
+  headPage = 'test Angular';
+  condition = false; // show register component
+  show = true; // show login component
+  showuser = false; // show userstat component
+
+
 }

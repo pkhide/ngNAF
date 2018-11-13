@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserstatComponent implements OnInit {
 
+  name: string;
+  lname: string;
+  age: string;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  whenClicked() {
+    console.log(this.name);
+    console.log(this.lname);
+    console.log(this.age);
+  }
 }

@@ -10,7 +10,7 @@ export class AppComponent {
   headPage = 'test Angular';
   condition = false; // show register component
   show = true; // show login component
-  showuser = false; // show userstat component
+  showuser = true; // show userstat component
 
 
 }

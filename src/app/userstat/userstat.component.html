@@ -1,3 +1,27 @@
 <p>
   userstat works!
 </p>
+
+Add New User
+<table>
+  <tr>
+    <th>Name</th>
+    <td><input [(ngModel)]="name" class="form-control input-lg" id="inputlg"></td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td><input [(ngModel)]="lname" class="form-control input-lg" id="inputlg"></td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td><input [(ngModel)]="age" class="form-control input-lg" id="inputlg"></td>
+  </tr>
+  <tr>
+    <td><input type="reset" name="Reset" class="btn-danger"></td>
+    <td><button (click)="whenClicked()" class="btn-primary">Add </button></td>
+  </tr>
+</table>
+
+{{name}}
+{{lname}}
+{{age}}

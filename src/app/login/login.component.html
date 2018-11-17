@@ -1,5 +1,17 @@
 login works!
-  <table>
+
+<p class="display-4">
+    Search: 
+    <span class="glyphicon glyphicon-print">
+      <input type="text" class="form-control-static" [(ngModel)]="searchTxt">
+    </span>
+  </p>
+  <p class="p-3 mb-2 bg-dark text-white">
+    {{searchTxt}}
+  </p>
+
+
+<table>
     <tr>
       <td>Username</td>
       <td><input [(ngModel)]="username" class="form-control" id="usr"></td>
@@ -9,10 +21,12 @@ login works!
       <td><input type="password" [(ngModel)]="password" class="form-control" id="pwd"></td>
     </tr>
     <tr>
-      <td><input type="reset" name="btnReset" class="btn-danger"></td>
-      <td><button (click)="onClicked()" class="btn-primary">Login</button></td>
+      <td><input type="reset" name="btnReset" class="btn btn-link btn-md"></td>
+      <td><button (click)="onClicked()" class="btn btn-success btn-md">Login</button></td>
     </tr>
   </table>
+
+  
   
 
   <!-- exmaple of 2-ways bindings

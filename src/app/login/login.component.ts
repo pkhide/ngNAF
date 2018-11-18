@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { toASCII } from 'punycode';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ export class LoginComponent implements OnInit {
 
   username: string;
   password: string;
-  txtSearch:string;
+  txtSearch: string;
 
   constructor() { }
 
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
   onClicked() {
     console.log(this.username);
     console.log(this.password);
+    console.log(this.txtSearch);
   }
 
 }
